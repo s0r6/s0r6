@@ -1,0 +1,700 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+ul,ol,li{list-style-type:none;}
+a{color:#000;text-decoration:none;}
+@font-face{
+    font-family:Faktum Test;
+    src:url("./font/Rene\ Bieder\ -\ Faktum\ Test\ Regular.otf")
+}
+@font-face{
+    font-family:Faktum Test Bold;
+    src:url("./font/Rene\ Bieder\ -\ Faktum\ Test\ Bold.otf")
+}
+@font-face{
+    font-family:PP Editorial New;
+    src:url("./font/PPEditorialNew-UltralightItalic.otf")
+}
+@font-face{
+    font-family:PPEditorialNew-Ultralight;
+    src:url("./font/PPEditorialNew-Ultralight.otf")
+}
+@font-face{
+    font-family:PPEditorialNew-Ultralight2;
+    src:url("./font/PPEditorialNew-Ultralight.otf")
+}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+/*완전중요!!가로스크롤대비!!*/
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}  
+body { 
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:12px; color:#000; line-height:22px; 
+    width:100%;
+    margin:0 auto;
+}
+/*컨테이너1*/	
+#container{
+    width:100%;
+    margin:0 auto;
+    background-color: #000000;
+}
+#container .contents{
+    margin:0 auto;    
+    height: 1020px;
+    width: 100%;
+    box-sizing: border-box;
+    background:url(images/work1.jpeg)no-repeat center center fixed;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+/*컨테이너1-컨테이너 안에 헤더있음*/
+#container .contents .header{
+    display:flex;
+    position:sticky;
+    width:100%;
+    height:80px;
+    margin:0 auto;
+    font-family:Faktum Test;
+}
+#container .header .logo_wrap{
+    float:left;
+    width:5%;
+    text-align: left;
+    font-size:2.6em;
+    align-items: center;
+    color:#f9f5ef;
+    margin-top: 0.5em; 
+    margin-left: 1em;
+
+}
+#container .header .gnb_wrap{
+    float:right;
+    width:20%;
+    height:80px;
+    margin-left:72%;
+}
+#container .header .gnb_wrap .gnb{
+    float:right;
+    height:30px;
+    margin-top:0.8em;
+    display: flex;
+    text-align: center;
+}
+.header .gnb_wrap .gnb>li{
+    margin:0 10px;
+    font-size:1.4em;
+    height:18px;
+    padding:2px 3px;
+    border-radius:4px;
+    color: #f9f5ef; /*!important;*/
+    letter-spacing: -.04em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;}
+
+.header .gnb_wrap .gnb>li:hover{
+    margin:0 10px;
+    padding:2px 3px;
+    font-size:1.4em;
+    height:18px;
+    background-color:#f9f5ef;
+    border-radius:4px;
+    color:#6E6E6E !important;
+    letter-spacing: -.04em;
+    -webkit-font-smoothing: antialiased;  
+    transition: background-color .4s ease; 
+}
+.main_wrap{
+    width:100%;
+    margin:0 auto;
+    /*background-color: aquamarine;*/
+    margin-top:16vh;
+}
+.main_wrap .main1{
+    margin:0 auto;
+    font-family:Faktum Test;
+    line-height:0.8em;
+    color:#fff;
+    font-size:17em; 
+    text-transform: uppercase;
+    padding-left:3vh;
+    white-space:nowrap;
+}
+.main_wrap .main2_wrap{
+    margin:0 auto;
+    /*background-color:yellowgreen;*/
+    text-align:right;
+    padding-right:5vh;
+    padding-top:5vh;
+}
+.main_wrap .main2_wrap .main2{
+    font-family:Faktum Test;
+    line-height:1em;
+    color:#fff;
+    font-size:2.6em; 
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased; 
+}
+.main_wrap .main2_wrap .main3{
+    font-family:Faktum Test;
+    line-height:1em;
+    color:#fff;
+    font-size:2.6em; 
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;   
+    display: inline-block;
+    padding-right:10vh; 
+}
+.contents .side_wrap{
+    width:100%;
+    margin:0 auto;
+    margin-top:20em;
+    position:sticky;
+}
+.side_wrap .side{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+}
+.side_wrap .side li{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor:pointer;
+    overflow: hidden;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    color:#f9f5ef;
+    text-transform: uppercase;
+    font-size:2em;
+}
+.side_wrap .side li:nth-child(1){
+    text-align: left;
+    padding-left: 3vh;
+}
+.side_wrap .side li:nth-child(3){
+    text-align: right;
+    padding-right: 3vh;
+}
+#container .contents2{
+    margin:0 auto;    
+
+    width: 100%;
+    background:black;
+}   
+#container .contents2 .menu_wrap{
+    margin:0 auto;
+}
+#container .contents2 .menu_wrap .menu{
+    height:10%;
+    min-height:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding:4vh 0 10vh 0;
+}
+#container .contents2 .menu_wrap .menu .menu_t{
+    margin-left:3vh;
+    display: inline-block;
+    color:#f9f5ef;
+    font-family:Faktum Test;
+    font-size: 4em;
+    line-height: 1.5em;
+}
+.all_wrap{
+    /*background-color: red;*/
+    width:100%;
+    margin:0 auto;
+    margin-bottom: 10vh;
+    margin-top:25vh;
+}
+.side_wrap2{
+    width:98%;
+    margin:0 auto;
+    /*background-color: orange;*/
+    border-top: 1px solid #fff;
+}
+.side_wrap2 .side2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width:100%;
+}
+.side_wrap2 .side2 li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    cursor:pointer;
+    overflow: hidden;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    color:#f9f5ef;
+    text-transform: uppercase;
+    margin-top:2vh;
+}
+.side_wrap2 .side2 li:nth-child(1){
+    text-align: left;
+    width: 15%;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.side_wrap2 .side2 li:nth-child(2){
+    text-align: left;
+    width:30%;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+.side_wrap2 .side2 li:nth-child(3){
+    text-align: left;
+    width:55%;
+    font-size:1.5em;
+    /*background-color: aqua;*/
+    /*padding-left:10vh;*/
+}
+.image_wrap{
+    width:100%;
+    height:80vh;
+    margin:0 auto;
+    /*background-color: orange;*/
+    margin-top: 5vh;
+}
+.image_wrap .image{
+    margin:0 auto;
+    width:98%;
+    height: 80vh;
+    box-sizing: border-box;
+    background:url(./images/brise2.jpg)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+.image_wrap .image .list_wrap{
+    padding-top:57vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap2{
+    width:100%;
+    height:80vh;
+    margin:0 auto;
+    /*background-color: orange;*/
+    margin-top: 5vh;
+}
+.image_wrap2 .image2{
+    margin:0 auto;
+    width:98%;
+    height: 80vh;
+    box-sizing: border-box;
+    background:url(./images/margeum2.jpg)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+.image_wrap2 .image2 .list_wrap2{
+    padding-top:57vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap3{
+    width:100%;
+    height:80vh;
+    margin:0 auto;
+    /*background-color: orange;*/
+    margin-top: 5vh;
+}
+.image_wrap3 .image3{
+    margin:0 auto;
+    width:98%;
+    height: 80vh;
+    box-sizing: border-box;
+    background:url(./images/video.jpg)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+.image_wrap3 .image3 .list_wrap3{
+    padding-top:57vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap4{
+    width:100%;
+    height:80vh;
+    margin:0 auto;
+    /*background-color: orange;*/
+    margin-top: 5vh;
+}
+.image_wrap4 .image4{
+    margin:0 auto;
+    width:98%;
+    height: 80vh;
+    box-sizing: border-box;
+    background:url(./images/work2.jpeg)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+.image_wrap4 .image4 .list_wrap4{
+    padding-top:57vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap5{
+    width:100%;
+    height:80vh;
+    margin:0 auto;
+    /*background-color: orange;*/  
+    margin-top: 5vh;
+}
+.image_wrap5 .image5{
+    margin:0 auto;
+    width:98%;
+    height: 80vh;
+    box-sizing: border-box;
+    background:url(./images/saenan.png)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+.image_wrap5 .image5 .list_wrap5{
+    padding-top:57vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap6{
+    width:100%;
+    height:80vh;
+    margin:0 auto;
+    /*background-color: orange;*/  
+    margin-top: 5vh;
+}
+.image_wrap6 .image6{
+    margin:0 auto;
+    width:98%;
+    height: 80vh;
+    box-sizing: border-box;
+    background:url(./images/102Food.jpg)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+.image_wrap6 .image6 .list_wrap6{
+    padding-top:57vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap7{
+    width:100%;
+    height:80vh;
+    margin:0 auto;
+    /*background-color: orange;*/  
+    margin-top: 5vh;
+}
+.image_wrap7 .image7{
+    margin:0 auto;
+    width:98%;
+    /*height: 120vh;*/
+    box-sizing: border-box;
+    background:url(./images/BG03.jpg)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+.image_wrap7 .image7 .list_wrap7{
+    padding-top:57vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap8{
+    width:100%;
+    height:100vh;
+    margin:0 auto;
+    /*background-color: orange;*/  
+    margin-top: 5vh;
+}
+.image_wrap8 .image8{
+    margin:0 auto;
+    width:98%;
+    height: 120vh;
+    box-sizing: border-box;
+    background:url(./images/UiAF.png)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:contain;
+    object-fit: cover;
+}
+
+.image_wrap8 .image8 .list_wrap8{
+    padding-top: 88vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap9{
+    width:100%;
+    height:95vh;
+    margin:0 auto;
+    /*background-color: orange;*/  
+    margin-top: 5vh;
+}
+.image_wrap9 .image9{
+    margin:0 auto;
+    width:98%;
+    height: 120vh;
+    box-sizing: border-box;
+    background:url(./images/HUPOposter.png)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:contain;
+    object-fit: cover;
+}
+
+.image_wrap9 .image9 .list_wrap9{
+    padding-top: 82vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap10{
+    width:100%;
+    height:95vh;
+    margin:0 auto;
+    /*background-color: orange;*/  
+    margin-top: 5vh;
+}
+.image_wrap10 .image10{
+    margin:0 auto;
+    width:98%;
+    height: 120vh;
+    box-sizing: border-box;
+    background:url(./images/IMC20.png)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:contain;
+    object-fit: cover;
+}
+
+.image_wrap10 .image10 .list_wrap10{
+    padding-top: 82vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#fff;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap11{
+    width:100%;
+    height:117vh;
+    margin:0 auto;
+    /*background-color: orange;*/  
+    margin-top: 5vh;
+}
+.image_wrap11 .image11{
+    margin:0 auto;
+    width:98%;
+    height: 120vh;
+    box-sizing: border-box;
+    background:url(./images/KSBMB2023_poster.png)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:contain;
+    object-fit: cover;
+}
+
+.image_wrap11 .image11 .list_wrap11{
+    padding-top: 100vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#000;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+.image_wrap12{
+    width:100%;
+    height:123vh;
+    margin:0 auto;
+    /*background-color: orange;*/  
+    margin-top: 5vh;
+}
+.image_wrap12 .image12{
+    margin:0 auto;
+    width:98%;
+    height: 120vh;
+    box-sizing: border-box;
+    background:url(./images/800300.png)no-repeat center center;
+    /*백그라운드에 fixed 빼놓은상태_fixed넣으면배경고정 이미지 사이즈 좀 크게적용되어있음*/
+    background-position: center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+.image_wrap12 .image12 .list_wrap12{
+    padding-top: 92vh;
+    margin-left:3vh;
+    /*border:1px solid salmon;*/
+    color:#FFF;
+    font-size: 2em;
+    font-family:Faktum Test;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2em;
+}
+
+#container .footer_wrap{
+    width:100%;
+    /*background-color: orange;*/
+    padding-top:50vh;
+}
+#container .footer_wrap .footer{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    /* display: inline-block; */
+    justify-content: center;
+}
+#container .footer_wrap .footer .ft_t1{
+    color:rgb(150, 150, 150);
+    font-family:PPEditorialNew-Ultralight2;
+    font-size: 11em;
+    -webkit-font-smoothing: antialiased;
+}
+
+#container .footer_wrap .footer .ft_t2{
+    color:rgb(150, 150, 150);
+    font-family:PP Editorial New;
+    font-size: 11em;
+    -webkit-font-smoothing: antialiased;
+    margin:0 1vh;
+}
+#container .footer_wrap .footer .ft_t3{
+    color:rgb(150, 150, 150);
+    font-family:PP Editorial New;
+    font-size: 11em;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*텍스트슬라이드2*/
+.flow-text2 {
+    display: flex;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.1s;
+    font-size: 2.5rem;
+    font-weight:bold;
+    color: #ffffff;
+    padding:10vh 0 2vh 0;
+}
+.flow-text2:hover {
+  color: rgb(160, 160, 160);
+}
+.flow-text2:hover .flow-wrap {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.flow-wrap2 {
+  animation: textLoop2 5s linear infinite;
+  padding-right: 1.4881vw;
+}
+
+@keyframes textLoop2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+/*텍스트슬라이드*/
+
+
+
+
+
+
+

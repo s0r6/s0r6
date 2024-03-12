@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko"  over-flow-x :  hidden;>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Log</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+        <!-- Slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./style5.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body style="overflow-x:hidden; overflow-y:auto;">
+    <div id="container"><!--컨테이너 안에 헤더있음-->
+        <div class="contents">
+            <div class="header"><!--header_s-->
+                <div class="logo_wrap">
+                    <li><a href="./index.html"><h3>Log</h3></a></li>
+                </div>
+                <div class="gnb_wrap">
+                    <ul class="gnb">
+                        <li><a href="./sub1.html">WORK</a></li>
+                        <li><a href="./sub2.html">ABOUT</a></li>
+                        <li><a href="./sub3.html">THINK</a></li>
+                        <li><a href="./sub4.html">CONTACT</a></li>
+                    </ul>
+                </div><!--gnb_wrap_e-->
+            </div><!--header_e-->
+        </div>
+        <div class="contents2">
+            <div class="checkin">CHECK-IN</div>
+            <div class="contents2_wrap">
+                <table class="left_wrap">
+                    <tr><th>NAME</th><td>SORA-LEE</td></tr>
+                    <tr><th>TEL</th><td>010-6348-3517</td></tr>
+                    <tr><th>BIRTH</th><td>1995.02.10</td></tr>
+                    <tr><th>E-MAIL</th><td>atyc33@naver.com</td></tr>
+                    <tr><th>INSTA</th><td>@dear.s0r6<br>anco.log</td></tr>
+                </table>
+                <table class="right_wrap">
+                    <tr><th>EDU</th><td>Daegu Catholic University<br>Mayjor-visual design<br>
+                    2014-2019<br>
+                    Narae design institute<br>2021 certificated program</td></tr>
+                    <tr><th>RECENT</th><td>ARTNTE DESIGN TEAM<br>2021/11 ~ 2022/04</td></tr>
+                    <tr><th></th><td>DNI DESIGN AGENCY<br>2022/07 ~ 2022/11</td></tr>
+                    <tr><th></th><td>THE PLANB BRANDING TEAM<br>2022/11 ~ 2023/06</td></tr>
+                </table>
+            </div>
+            <div class="recent_wrap">
+                <div class="recent1">recent</div>
+                <div class="recent2"><li><a href="mailto:atyc33@naver.com">mail cent</a></li></div>
+                <div class="recent3"><li><a href="https://www.instagram.com/anco.log/">insta cent</a></li></div>
+            </div>
+            <div class="my_wrap">
+                <p class="my">
+                    안녕하세요! 디자이너 이소라입니다!<br>
+                    형식적인 포트폴리오가 아닌 브랜딩으로 보여드리고자<br>LOG라는 사이트를 만들었습니다.<br>
+                    디자이너는 일상에서 브랜딩을 할 줄 알아야 한다 생각합니다.<br>LOG는 그런 뜻을 담아 일상에서<br>
+                    영감을 받은 것들을 모아 제작하였습니다.<br>앞으로도 많은 작업물로 찾아뵙겠습니다!(｡•̀ᴗ-)✧<br>
+                    LOG를 방문해주셔서 진심으로 감사합니다!
+                </p>
+            </div>
+
+            <div class="under_wrap">
+                <div class="under1">PORTFOLIO<br>LOG   
+                </div> 
+            </div>
+
+
+        </div>
+
+    </div><!--container_e-->
+    <div class="footer_wrap">
+        <div class="footer">
+            <span class="ft_t1">(Project</span>
+            <span class="ft_t2">by.Log</span>
+            <span class="ft_t1">Portfoli</span>
+            <span class="ft_t3">o)</span>
+        </div>
+    </div>    
+    <div class="flow-container2"><!--텍스트슬라이드_s-->
+        <div class="flow-text2">
+            <div class="flow-wrap2">do not disturb🎱</div><!--내용-->
+            <div class="flow-wrap2">do not disturb🎱</div>
+            <div class="flow-wrap2">do not disturb🎱</div>
+            <div class="flow-wrap2">do not disturb🎱</div>
+            <div class="flow-wrap2">do not disturb🎱</div>
+            <div class="flow-wrap2">do not disturb🎱</div>
+            <div class="flow-wrap2">do not disturb🎱</div>
+            <div class="flow-wrap2">do not disturb🎱</div>
+            <div class="flow-wrap2">do not disturb🎱</div>
+            <div class="flow-wrap2">do not disturb🎱</div>
+        </div>
+    </div><!--텍스트슬라이드_e-->
+</body>
+<script>
+    function resizeApply() {
+    var minWidth = 1200;
+    var body = document.getElementsByTagName('body')[0];
+    if (window.innerWidth < minWidth) { body.style.zoom = (window.innerWidth / minWidth); }
+    else body.style.zoom = 1;
+    }
+
+    window.onload = function() {
+    window.addEventListener('resize', function() {
+        resizeApply();
+    });
+    }
+
+    resizeApply();
+    </script>
+</html>

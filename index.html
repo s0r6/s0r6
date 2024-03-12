@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="ko"  over-flow-x :  hidden;>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Log</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+        <!-- Slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body style="overflow-x:hidden; overflow-y:auto;">
+    <div id="wrap">
+        <!--container1-->
+        <div id="container"><!--컨테이너 안에 헤더있음-->
+            <div class="contents">
+                <div class="header"><!--header_s-->
+                    <div class="logo_wrap">
+                        <li><a href="./index.html"><h3>Log</h3></a></li>
+                    </div>
+                    <div class="gnb_wrap">
+                        <ul class="gnb">
+                            <li><a href="./sub1.html">WORK</a></li>
+                            <li><a href="./sub2.html">ABOUT</a></li>
+                            <li><a href="./sub3.html">THINK</a></li>
+                            <li><a href="./sub4.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div><!--header_e-->
+                <div class="cont1">
+                    <div class="cont1_text1">
+                        TODAY’S MY LOG<br>FOR TOMORROW
+                    </div>
+                    <div class="cont1_text2">
+                        Think &<br> Record
+                    </div>
+                </div>
+                <div class="cont2">
+                    <span>CHECK-IN</span>
+                </div>
+                <div id="date"></p><!--날짜스크립트-->
+                    <script>
+                    date = new Date();
+                    year = date.getFullYear();
+                    month = date.getMonth() + 1;
+                    day = date.getDate();
+                    document.getElementById("date").innerHTML = month + "/" + day + "/" + year;
+                    </script>
+                </div>
+                <div class="cont3"><!--텍스트박스-->
+                    <span class="cont3_t1">LOG는 일상에서 영감을 받아 기록하는 개인의 포트폴리오입니다.<br>
+                    그때그때 받은 영감을 그림으로 이 곳에서 보여드리고자 합니다.<br>
+                    이번에는 새로운 일이 일어나고 설레는 공간인<br>CONCIERGE에서 영감을 받아 작업하였습니다.<br>
+                    LOG에서 즐거운 시간 보내시길 바랍니다.<br>*본 페이지는 PC에 최적화 되어있습니다.*</span>
+                    <span class="cont3_t2">LOG IS WHERE DIFFERENT WORLDS COME<br>
+                    TOGHETHER.WHERE THEY ARE REIMAGNED<br>AND RECREATED. AND WHERE WE LOG THE<br>
+                    CURRENT TO MAKE A DIFFERENCE IN A WAY<br>THAT MATTERS.
+                    </span>
+                </div>
+            </div>   
+        </div><!--컨테이너1_e-->
+        <div id="container2"><!--컨테이너2_s-->
+            <div class="contents2">
+                Think about a better experience with your<br>customersand open up possibilities.<br>
+                <p class="since">since. 2022</p>
+            </div>
+            <div class="flow-container"><!--텍스트슬라이드_s-->
+                <div class="flow-text">
+                    <div class="flow-wrap">wellcome to log©</div><!--내용-->
+                    <div class="flow-wrap">wellcome to log©</div>
+                    <div class="flow-wrap">wellcome to log©</div>
+                    <div class="flow-wrap">wellcome to log©</div>
+                    <div class="flow-wrap">wellcome to log©</div>
+                    <div class="flow-wrap">wellcome to log©</div>
+                    <div class="flow-wrap">wellcome to log©</div>
+                    <div class="flow-wrap">wellcome to log©</div>
+                    <div class="flow-wrap">wellcome to log©</div>
+                    <div class="flow-wrap">wellcome to log©</div>
+                </div>
+            </div><!--텍스트슬라이드_e-->
+            <div class="contents3"><!--큰박스-->
+                <div class="focusimage">
+                    <div class="focustext">we need design<br> &nbsp; &nbsp;  focused creative!</div>
+                </div>
+            </div>
+            <div class="contents4"><!--큰박스-->
+                <div class="likeleft"></div>
+                <div class="likeright">just like your favorite spot,<br>digital spaces and<br>
+                experiences should make you<br>feel comfortable<br><div class="line">like home.</div></div>
+            </div>
+            <div class="contents5"><!--큰박스-->
+                <div class="krleft"></div>
+                <div class="krtextright">뒹굴뒹굴하기 좋은 집처럼, 매일 들르는 카페처럼<br>
+                우리는 디지털 공간에 편안함과 호기심<br>그리고 새로운 즐거움을 담습니다.</div>
+            </div>
+            <div class="contents6"><!--큰박스-->
+                <div class="var1"><span class="var1t">STORIES THAT INSPIRE</span></div> 
+                <div class="var2"></div>
+                <div class="var3"><a href="#">VIEW (ALL)</a></div>          
+            </div>
+            <ul class="center">
+                <li>
+                    <h3><div class="box"><img src="./images/brise1.jpg" alt="#" width="100%" height="100%"></div></h3>
+                </li>
+                <li>
+                    <h3><div class="box"><img src="./images/brise2.jpg" alt="#" width="100%" height="100%"></div></h3>
+                </li>
+                <li>
+                    <h3><div class="box"><img src="./images/margeum1.jpg" alt="#" width="100%" height="100%"></div></h3>
+                </li>
+                <li>
+                    <h3><div class="box"><img src="./images/margeum2.jpg" alt="#" width="100%" height="100%"></div></h3>
+                </li>
+                <li>
+                    <h3><div class="box"><img src="./images/work1.jpeg" alt="#" width="100%" height="100%"></div></h3>
+                </li>
+                <li>
+                    <h3><div class="box"><img src="./images/work2.jpeg" alt="#" width="100%" height="100%"></div></h3>
+                </li>
+            </ul>
+            <script src="slick.js"></script>
+            <script>
+                $(function(){
+                    
+                    $('.center').slick({
+                    centerMode: true,
+                    
+                    slidesToShow: 5,
+                    responsive: [
+                        {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '200px',
+                            slidesToShow: 1
+                        }
+                        }
+                    ]
+                    });
+                });
+            </script>
+            <div class="contents7">
+                <div class="socialwrap1">
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/anco.log/">FOLLOW US @anco.log</a></li>
+                        <li><a href="https://www.instagram.com/anco.log/">#THELOGPROJECT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contents8">
+                <div class="candowrap"><p class="cando">LOG Can do it!</p></div>
+                <div class="listwrap">
+                    <ul class="list">
+                        <li>Branding design</li>
+                        <li>Web design</li>
+                        <li>Illust design</li>
+                    </ul>
+                    <div class="list2wrap">
+                        <span class="list2_1">(</span>
+                        <span class="list2_2">WE(LOG THE CURRENT)TO REIMAGINE THE EXISTING AND TO CREATE THE NEW.
+                            <br>WE'RE SERIOUS ABOUT BUILDING SPACES AND EXPERIENCES THAT CREATE POSITIVE
+                            <br>RELATIONSHIPS BETWEEN YOUR BRAND AND YOUR AUDIENCE</span>
+                        <span class="list2_3">)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contents9">
+                <div class="ment_wrap">
+                    <div class="ment">
+                    브랜드가 가장 돋보이면서<br>
+                    감성적으로 연결되는 디지털공간과<br>
+                    경험을 일상에서 만듭니다*.☆⸜(⑉˙ᗜ˙⑉)⸝♡.*
+                    </div>
+                </div>
+                <div class="bell_wrap">
+                    <div class="bell"></div>
+                </div>
+            </div>
+            <div class="footer_wrap">
+                <div class="footer">
+                    <span class="ft_t1">(Project</span>
+                    <span class="ft_t2">by.Log</span>
+                    <span class="ft_t1">Portfoli</span>
+                    <span class="ft_t3">o)</span>
+                </div>
+            </div>    
+
+            <div class="flow-container2"><!--텍스트슬라이드_s-->
+                <div class="flow-text2">
+                    <div class="flow-wrap2">do not disturb🎱</div><!--내용-->
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                    <div class="flow-wrap2">do not disturb🎱</div>
+                </div>
+            </div><!--텍스트슬라이드_e-->
+        </div>
+    </div>
+</body>
+<script>
+    function resizeApply() {
+    var minWidth = 1200;
+    var body = document.getElementsByTagName('body')[0];
+    if (window.innerWidth < minWidth) { body.style.zoom = (window.innerWidth / minWidth); }
+    else body.style.zoom = 1;
+    }
+
+    window.onload = function() {
+    window.addEventListener('resize', function() {
+        resizeApply();
+    });
+    }
+
+    resizeApply();
+    </script>
+</html>
+

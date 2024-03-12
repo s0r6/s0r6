@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko"  over-flow-x :  hidden;>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Log</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+        <!-- Slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./style3.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body style="overflow-x:hidden; overflow-y:auto;">
+    <div id="container"><!--컨테이너 안에 헤더있음-->
+        <div class="contents">
+            <div class="header"><!--header_s-->
+                <div class="logo_wrap">
+                    <li><a href="./index.html"><h3>Log</h3></a></li>
+                </div>
+                <div class="gnb_wrap">
+                    <ul class="gnb">
+                        <li><a href="./sub1.html">WORK</a></li>
+                        <li><a href="./sub2.html">ABOUT</a></li>
+                        <li><a href="./sub3.html">THINK</a></li>
+                        <li><a href="./sub4.html">CONTACT</a></li>
+                    </ul>
+                </div><!--gnb_wrap_e-->
+            </div><!--header_e-->
+        </div>
+        <div class="contents2-3wrap">
+            <div class="contents2">
+                <div class="cont_left">
+                    <div class="left_wrap">
+                        <p class="cont_left_t1">LOG CAN</p>
+                        <p class="cont_left_t2">DO IT!</p>
+                        <p class="cont_left_t3">
+                        </p>
+                    </div>
+                    <div class="left_wrap2">
+                        <p class="cont_left_t4">
+                            Log is a Graphic-based brand&web design portfolio site.<br>
+                            We always get energy from our daily lives.<br>
+                            A comfortable bed, a quiet cafe, and <br>
+                            Sometimes in a place that's nothing<br>
+                            With that kind of inspiration, I would like to <br>
+                            Create a new work by reflecting it in the design.
+                        </p>
+                    </div>
+                </div>
+                <div class="cont_right">  
+                    <div class="right_wrap">
+                        <p class="cont_right_t1">BRANDING</p>
+                        <p class="cont_right_t2">PACKAGEDESIGN</p>
+                        <p class="cont_right_t3">IDENTITYDESIGN</p>
+                        <P class="cont_right_t4">GRAPHIC</P>
+                        <p class="cont_right_t5">ILLUSTRATION</p>
+                        <p class="cont_right_t6">EXHIBITION</p>
+                    </div>
+                </div>
+            </div><!--contents2_e-->
+            <div class="contents3">
+                <ul class="cont2_wrap">
+                    <li class="cont2_left">
+                        <div class="left2">
+                            <p class="cont2_left_t1">PHOTOSHOP</p>
+                            <p class="cont2_left_t2">ILLUSTRATOR</p>
+                            <p class="cont2_left_t3">INDESIGN</p>
+                            <P class="cont2_left_t4">AFTER EFFECT</P>
+                            <p class="cont2_left_t5">HTML/CSS</p>
+                            <p class="cont2_left_t6">JQUERRY</p>
+                        </div>
+                    </li>
+                    <li class="cont2_center">
+                        <ul class="center2">
+                            <li>내 왼손엔 흑염룡,<br>오른손엔 마우스가 있지 크큭...</li>
+                            <li><img src="./images/human.png"></li>
+                        </ul>
+                    </li>
+                    <li class="cont2_right">
+                        <div class="right_wrap2">
+                            <span class="cont2_right_t">
+                                Log is a Graphic-based brand&web design portfolio site.<br>
+                                We always get energy from our daily lives.<br>
+                                A comfortable bed, a quiet cafe, and <br>
+                                Sometimes in a place that's nothing<br>
+                                With that kind of inspiration, I would like to <br>
+                                Create a new work by reflecting it in the design.
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contents4">
+        </div>
+        <div class="footer_wrap">
+            <div class="footer">
+                <span class="ft_t1">(Project</span>
+                <span class="ft_t2">by.Log</span>
+                <span class="ft_t1">Portfoli</span>
+                <span class="ft_t3">o)</span>
+            </div>
+        </div>    
+        <div class="flow-container2"><!--텍스트슬라이드_s-->
+            <div class="flow-text2">
+                <div class="flow-wrap2">do not disturb🎱</div><!--내용-->
+                <div class="flow-wrap2">do not disturb🎱</div>
+                <div class="flow-wrap2">do not disturb🎱</div>
+                <div class="flow-wrap2">do not disturb🎱</div>
+                <div class="flow-wrap2">do not disturb🎱</div>
+                <div class="flow-wrap2">do not disturb🎱</div>
+                <div class="flow-wrap2">do not disturb🎱</div>
+                <div class="flow-wrap2">do not disturb🎱</div>
+                <div class="flow-wrap2">do not disturb🎱</div>
+                <div class="flow-wrap2">do not disturb🎱</div>
+            </div>
+        </div><!--텍스트슬라이드_e-->
+    </div><!--container_e-->
+</body>
+<script>
+    function resizeApply() {
+    var minWidth = 1200;
+    var body = document.getElementsByTagName('body')[0];
+    if (window.innerWidth < minWidth) { body.style.zoom = (window.innerWidth / minWidth); }
+    else body.style.zoom = 1;
+    }
+
+    window.onload = function() {
+    window.addEventListener('resize', function() {
+        resizeApply();
+    });
+    }
+
+    resizeApply();
+    </script>
+</html>
